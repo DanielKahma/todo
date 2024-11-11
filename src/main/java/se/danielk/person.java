@@ -9,8 +9,6 @@ public class person {
     private String email;
 
 
-
-
     //Constructors
     public person(String firstName, String lastName, String email){
         if (firstName == null || firstName.isEmpty())
@@ -71,9 +69,14 @@ public class person {
         this.email = email;
     }
 
-    public String toString(){
-        return "Person" + "id:" + id + ", FirstName: " + firstName + ", LastName: " + lastName + ", email: " + email;
-
+    @Override
+    public String toString() {
+        return "person{" +
+                "id = " + id +
+                ", firstName = '" + firstName + '\'' +
+                ", lastName = '" + lastName + '\'' +
+                ", email = '" + email + '\'' +
+                '}';
     }
 
 

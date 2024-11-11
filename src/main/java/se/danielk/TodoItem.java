@@ -27,7 +27,6 @@ public class TodoItem {
         this.creator = creator;
 
 
-
     }
 
     //Methods
@@ -81,5 +80,10 @@ public class TodoItem {
         this.creator = creator;
     }
 
-
+    @Override
+    public String toString() {
+        return "TodoItem{" +
+                "deadLine=" + deadLine +
+                '}';
+    }
 }

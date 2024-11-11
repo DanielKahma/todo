@@ -22,7 +22,6 @@ public class TodoItemTask {
             assigned = false;
 
 
-
         this.id = id;
         this.assigned = assigned;
         this.todoItem = todoItem;
